@@ -16,13 +16,13 @@ namespace Properties
         public IList<string> Seeds
         {
             get { return this.seeds.ToList(); }
-            set { this.seeds = seeds.ToArray(); }
+            set { this.seeds = value.ToArray(); }
         }
 
         public IList<string> Names
         {
             get { return this.names.ToList(); }
-            set { this.names = names.ToArray(); }
+            set { this.names = value.ToArray(); }
         }
 
         public int DeckSize=>this.names.Length * this.seeds.Length;
